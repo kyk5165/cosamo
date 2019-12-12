@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 75%;
+	line-height: 1.5em;
+	font-family: "Malgun Gothic", "Lucida Grande", Tahoma, Verdana,
+		AppleGothic, UnDotum, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	border: 0 none;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#jb-container {
+	width: 1024px;
+	margin: 10px auto;
+	border: 1px solid #bcbcbc;
+}
+
+#jb-header {
+	margin-left: 10px;
+	/* border: 1px solid #bcbcbc; */
+}
+
+#nav {
+	margin: 20px;
+	background-color: red;
+	float: right;
+	width: 50px;
+	height: 50px;
+}
+
+#nav li ul {
+	visibility: hidden;
+	opacity: 0;
+	transition: .3s ease-in-out;
+	transform: translateX(-50px);
+	width: 50px;
+	position: absolute;
+	z-index: 200;
+}
+
+#nav li:hover ul {
+	visibility: visible;
+	opacity: 1;
+	transform: translateX(0);
+}
+
+#nav:hover {
+	background-color: blue;
+}
+
+#jb-content {
+	width: auto;
+}
+
+.jb-img {
+	max-width: 100%
+}
+
+#lk_discord {
+	float: left;
+	width: 120px;
+	margin: 10px;
+}
+
+#jb-footer {
+	display: inline-block;
+	clear: both;
+	text-align: right;
+	margin-right: 10px;
+	/* border: 1px solid #bcbcbc; */
+}
+
+@media ( max-width : 960px ) {
+	#jb-container {
+		width: auto;
+	}
+	#jb-content {
+		float: none;
+		width: auto;
+	}
+	#jb-sidebar {
+		
+	}
+	#lk_discord {
+		float: none;
+	}
+}

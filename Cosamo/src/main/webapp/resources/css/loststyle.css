@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+tr,td {
+	border: 0;
+}
+
+.item-name {
+	
+}
+
+.price {
+	text-align: right;
+}
+
+.gold {
+	text-align: right;
+}
+
+.margin {
+	color: black;
+	text-align: center;
+	font-weight: bold;
+}
+
+.ingold {
+	width: 80px;
+	text-align: right;
+}
+
+#mari {
+	border: 1px solid;
+	border-collapse: collapse;
+}
+
+#mari td {
+	border: 1px solid;
+	padding: 5px;
+}
